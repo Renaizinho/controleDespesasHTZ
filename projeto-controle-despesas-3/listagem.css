@@ -1,0 +1,21 @@
+body {
+    background-color: azure;
+}
+
+table {
+    border: 2px solid #000; 
+    border-collapse: collapse; 
+    background-color: antiquewhite;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.pago{
+    background-color:antiquewhite;
+}
+
+.aberto{
+    background-color: lightcoral;
+}

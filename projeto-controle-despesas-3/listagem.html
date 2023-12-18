@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="listagem.css">
+    <script src="src/listagem.js" type="module"></script>
+</head>
+<body>
+    <a href="index.html">voltar</a>
+    <h1>Despesas</h1>
+    <label for="nomeFiltro">Descrição</label>
+    <input type="text" id="nomeFiltro"/>
+    <select id="situacaoFiltro">
+        <option value="Ambos">Ambos</option>
+        <option value="Pago">Pago</option>
+        <option value="Aberto">Aberto</option>
+    </select>
+    <button id="filtrar">Filtrar por situação</button>
+    <select id="mesFiltro">
+        <option value="01">Janeiro</option>
+        <option value="02">Fevereiro</option>
+        <option value="03">Março</option>
+        <option value="04">Abril</option>
+        <option value="05">Maio</option>
+        <option value="06">Junho</option>
+        <option value="07">Julho</option>
+        <option value="08">Agosto</option>
+        <option value="09">Setembro</option>
+        <option value="10">Outubro</option>
+        <option value="11">Novembro</option>
+        <option value="12">Dezembro</option>
+    </select>
+    <label for="dataInicial">Data Inicial:</label>
+    <input type="date" id="dataInicial" />
+    <label for="dataFinal">Data Final:</label>
+    <input type="date" id="dataFinal" />
+    <button id="filtrarData">Filtrar pela data</button>
+    <table>
+        <thead>
+            <tr>
+                <td>Dia</td><td>Descrição</td><td>Valor</td><td>Situação</td>
+                <td>Data do Pagamento</td><td>Valor Pago</td><td>Alterar</td><td>Remoção</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+</html>
